@@ -3,9 +3,10 @@
 ==================================== */
 
 .button {
-	color: #fff;
-  background: #4a89ca;
-  transition-duration: .4s;
+  color: #4a89ca;
+  border: 2px solid;
+  transition-duration: .4s, 2s, 1s;
+  transition-property: background, border-radius, color;
 }
 
 /* ================================= 
@@ -13,9 +14,20 @@
 ==================================== */
 
 .button:hover {
-  background: #d36a62;
+  color: #fff;
+  background: #4a89ca;
+  border-radius: 1em;
 }
 
 .button:active {
   background: #a33830;
+}
+
+.photo-overlay {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: .6s;
+}
+.photo-overlay:hover {
+  opacity: 0;
 }
